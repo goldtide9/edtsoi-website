@@ -19,7 +19,7 @@ nav {
 .nav-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,9 +84,82 @@ p {
     margin-bottom: 0.5rem;
 }
 
+.topics-container {
+    margin-top: 2rem;
+}
+
+.topic-category {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.topic-category h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+.topic-links {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-links li {
+    margin-bottom: 0.8rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.topic-links li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #666;
+    font-weight: bold;
+}
+
+.topic-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    padding: 0.5rem 0;
+    display: inline-block;
+}
+
+.topic-links a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.article {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.article-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.article-content {
+    text-align: left;
+    margin-top: 3rem;
+}
+
 @media (max-width: 600px) {
     .nav-container {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
     }
     
     main {
@@ -95,5 +168,27 @@ p {
     
     nav ul {
         gap: 1rem;
+    }
+    
+    .topic-category {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .topic-category h3 {
+        font-size: 1.2rem;
+    }
+    
+    .topic-links a {
+        font-size: 1rem;
+    }
+    
+    .article {
+        padding: 1rem;
+    }
+    
+    .article-title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
 }
