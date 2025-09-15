@@ -291,6 +291,15 @@ p {
     outline-color: #60a5fa;
 }
 
+/* Accent text matching theme */
+.accent-text {
+    color: #2563eb;
+}
+
+[data-theme="dark"] .accent-text {
+    color: #60a5fa;
+}
+
 /* Headshot Image */
 .headshot {
     width: 220px;
