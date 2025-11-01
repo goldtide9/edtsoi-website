@@ -74,21 +74,7 @@ p {
     font-size: 1.1rem;
 }
 
-.post {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #eee;
-}
-
-.post:last-child {
-    border-bottom: none;
-}
-
-.date {
-    font-size: 0.9rem;
-    color: #888;
-    margin-bottom: 0.5rem;
-}
+/* removed unused .post and .date */
 
 .topics-container {
     margin-top: 2rem;
@@ -352,39 +338,54 @@ p {
     font-size: 2rem;
 }
 
-.subsection-title {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-    color: #333;
+/* removed unused .subsection-title */
+
+/* removed unused .investment-list */
+
+/* Social icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
 }
 
-.investment-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    transition: color 0.2s ease, transform 0.2s ease, background-color 0.2s ease, opacity 0.2s ease;
+    opacity: 0.9;
+    text-decoration: none;
+    color: #0ea5e9; /* promote hover color to default */
+    background-color: rgba(14, 165, 233, 0.12); /* promote hover bg to default */
 }
 
-.investment-list li {
-    padding: 0.5rem 0;
-    font-size: 1.1rem;
-    color: #555;
-    border-bottom: 1px solid #eee;
+.social-icons a:hover {
+    transform: translateY(-1px);
+    opacity: 1;
 }
 
-.investment-list li:last-child {
-    border-bottom: none;
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
 }
+
+/* Dark theme social icons */
+[data-theme="dark"] .social-icons a {
+    color: #67e8f9; /* promote hover color to default (dark) */
+    background-color: rgba(103, 232, 249, 0.16); /* promote hover bg to default (dark) */
+}
+/* hover keeps motion only; colors are defaulted above */
 
 /* Dark theme styles for current section */
-[data-theme="dark"] .subsection-title {
-    color: #e0e0e0;
-}
+/* removed unused dark .subsection-title */
 
-[data-theme="dark"] .investment-list li {
-    color: #b0b0b0;
-    border-bottom-color: #333;
-}
+/* removed unused dark .investment-list */
 
 @media (max-width: 600px) {
     .nav-container {
@@ -444,8 +445,5 @@ p {
         gap: 2rem;
     }
     
-    .subsection-title {
-        font-size: 1.2rem;
-        margin-top: 1.5rem;
-    }
+    /* removed unused responsive .subsection-title */
 }
